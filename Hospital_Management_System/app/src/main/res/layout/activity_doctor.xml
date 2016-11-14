@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#F9FBE7"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20dp"
+            android:padding="7dp"
+            android:background="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:text="Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/colorAccent"
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="20dp"
+            android:padding="7dp"
+            android:background="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:text="Gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/colorAccent"
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="20dp"
+            android:padding="7dp"
+            android:background="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:text="Age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/colorAccent"
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="20dp"
+            android:padding="7dp"
+            android:background="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_weight="1.8"
+            android:text="Branch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnPatients"
+            android:layout_weight="0.3"
+            android:padding="8dp"
+            android:textSize="20dp"
+            android:text="ADD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/selected_raw"
+        android:id="@+id/my_recycle_view_doctor">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

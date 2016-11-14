@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4A148C</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#AED581</color>
+    <color name="dialog_ok_bgcolor">#FF4081</color>
+    <color name="dialog_cancel_bgcolor">#303F9F</color>
+</resources>

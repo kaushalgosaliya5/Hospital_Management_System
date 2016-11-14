@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#F9FBE7"
+    tools:context="com.example.intel.hospital.MainActivity">
+
+    <TextView
+        android:textSize="20dp"
+        android:text="Patient Form"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:hint="Name"
+        android:layout_margin="10dp"
+        android:id="@+id/etPName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal">
+    <RadioButton
+            android:text="MALE"
+            android:id="@+id/rMale"
+            android:checked="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="FEMALE"
+            android:id="@+id/rFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </RadioGroup>
+   </TableRow>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_margin="10dp"
+        android:hint="Address"
+        android:id="@+id/etPAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:hint="Age"
+        android:id="@+id/etPAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:inputType="number"
+        android:hint="Mobile No"
+        android:layout_margin="10dp"
+        android:id="@+id/etPMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+    <Spinner
+        android:padding="10dp"
+        android:id="@+id/PBranch"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+    <Spinner
+        android:padding="10dp"
+        android:id="@+id/PDoctor"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnPHome"
+            android:text="Home"
+            android:textSize="18dp"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnPClear"
+            android:text="Clear"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textSize="18dp"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:layout_margin="3dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnPSubmit"
+            android:text="Submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

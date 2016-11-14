@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#F9FBE7"
+    tools:context="com.example.intel.hospital.MainActivity">
+
+    <TextView
+        android:textSize="20dp"
+        android:text="Registration Form"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:hint="Name"
+        android:layout_margin="10dp"
+        android:id="@+id/etRName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_margin="10dp"
+        android:hint="User Name"
+        android:id="@+id/etRUname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:id="@+id/etRPsw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        android:hint="Confirm Password"
+        android:id="@+id/etRCPsw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:inputType="number"
+        android:hint="Mobile No"
+        android:layout_margin="10dp"
+        android:id="@+id/etRMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/Rspinner"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:textSize="18dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnRHome"
+            android:text="Home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnRClear"
+        android:text="Clear"
+            android:textSize="18dp"
+            android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_weight="2"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnRSubmit"
+        android:layout_margin="1dp"
+        android:text="Submit"
+        android:textSize="18dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

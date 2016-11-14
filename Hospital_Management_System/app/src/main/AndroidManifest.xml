@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.intel.hospital">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/hospital"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PatientDetail"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Admin"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Cashier"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PatientData"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient"
+            android:screenOrientation="portrait" />
+        <!--<activity
+            android:name=".PatientDetail"
+            android:screenOrientation="landscape" />
+        --><activity
+            android:name=".LabTech"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Doctor"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ForgotPsw"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Registration"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

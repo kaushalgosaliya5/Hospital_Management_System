@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#F9FBE7"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bDoctor"
+            android:text="Doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/bLabTech"
+            android:layout_weight="1"
+            android:text="LabTech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+         <Button
+             android:id="@+id/bCashier"
+             android:layout_weight="1"
+             android:text="Cashier"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+         <Button
+             android:id="@+id/bAdmin"
+             android:layout_weight="1"
+             android:text="Admin"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20dp"
+            android:padding="7dp"
+            android:background="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:text="Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/colorAccent"
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="20dp"
+            android:padding="7dp"
+            android:background="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:text="User Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/colorAccent"
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="20dp"
+            android:padding="7dp"
+            android:background="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:text="Password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/colorAccent"
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="20dp"
+            android:padding="7dp"
+            android:background="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:text="Mobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="@drawable/selected_raw"
+        android:id="@+id/my_recycle_view">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
